@@ -1,0 +1,82 @@
+@mixin backgroundImage($filePath, $bgReapeat:no-repeat, $bgSize:cover) {
+    background-image: url($filePath);
+    background-repeat: $bgReapeat;
+    background-size: $bgSize;
+}
+@mixin backgroundColor($bgColor) {
+    background-color: $bgColor;
+} 
+// fonts
+@mixin kaushan ($size:none){
+	font-family: $kaushan;
+	font-size: $size;
+}
+@mixin roboto-light-italic ($size:none){
+    font-family: $Roboto-LightItalic;
+	font-size: $size;
+}
+@mixin roboto-reg ($size:none){
+    font-family: $robotoregular;
+	font-size: $size;
+}
+@mixin roboto-bold ($size:none){
+    font-family: $robotobold;
+	font-size: $size;
+}
+@mixin mont-bold ($size:none){
+    font-family: $montbold;
+    font-size: $size;
+}
+@mixin mont-reg ($size:none){
+    font-family:$montregular;
+    font-size: $size;
+}
+%line{
+    border-bottom: 2px solid $watermelon;
+    content: "";
+    display: block;
+    padding-top: 20px; 
+    width: 50px;
+    margin: 0 auto;
+}
+%marginSec{
+    margin-bottom: 110px;
+}
+%grediant-overlay{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+    z-index: 1;
+    background: linear-gradient( $startgrediant 0%, $endgrediant 100%);
+}
+@mixin overlay($top , $left){
+    text-align: center;
+    position: absolute;
+    top: $top;
+    left:$left;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: 2;
+    color: $white;
+    i{
+        margin-right: 0.625rem;
+    }
+}
+%media{
+    p{
+        @include roboto-light-italic (1.3rem);
+    }
+    footer{
+        @include roboto-light-italic (1.3rem);
+        color:$watermelon;
+        span{
+            @include kaushan (1.3rem);
+            color:$black;
+        }
+    }
+}

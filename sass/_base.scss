@@ -1,0 +1,385 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-size: 16px;
+    p{
+        @include mont-reg (0.9375rem);
+    }
+}
+// common
+.title{
+    padding: 5.9375rem 0 2.9375rem 0;
+    h4{
+        @include kaushan (1.5rem);
+    }
+    h3{
+        @include mont-bold (1.875rem);
+        padding-bottom: 1.25rem;
+        &:after{
+            @extend %line;
+        }
+    }
+}
+// navbar
+.navbar{
+    @include backgroundColor($watermelon);
+.logo{
+    @include mont-bold (1.8rem);
+}
+li a, i{
+    color: $white;
+    margin-left: 2rem;
+}
+.active{
+    color:$endgrediant;
+    &:after{
+        content: "";
+        display: block;
+        border-bottom: 0.125rem $endgrediant solid;
+    }
+}
+}
+// header
+header{
+    // @include backgroundImage('../img/head.png'); 
+    // position:relative;
+    // &::after{
+    //     @extend %grediant-overlay;
+    // }
+    .first{
+          @include backgroundImage('../img/head.png'); 
+    }
+    .second{
+        @include backgroundImage('../img/marion-michele.jpg'); 
+    }
+    .third{
+        @include backgroundImage('../img/katherine-moran.jpg');  
+    }
+    .header-content{
+        padding:130px 0;
+        h3{
+            @include kaushan (2rem);
+        }
+        h1{
+            @include mont-bold (5rem);
+            // width: 40%;
+            margin: 0 auto;
+            &:after{
+                @extend %line;
+                border-bottom: 2px solid $white;
+            }
+                margin-bottom: 3.125rem;
+            @media(max-width:1240px){
+                    @include mont-bold (4.5rem);
+            }
+        }
+       .btn-outline{
+            border: .1875rem solid $white;
+            border-radius: 0%;
+            padding: .625rem 1.875rem;
+        }
+    }     
+    .modal-content{
+        padding: 1.5rem;
+    } 
+}
+
+// about us
+.about-us{
+    @extend %marginSec;
+    figure{
+        position: relative;
+        img{
+            width:100%;
+        }
+        .overlay{
+            @include overlay( 40% , 40%);
+        }
+        &:hover{
+            transform: translate(-0.625rem , -0.625rem);
+            &::after{
+                @extend %grediant-overlay;
+                box-shadow: 0.3125rem 0.3125rem 0 0 $cyan;
+                width: calc(100% - 30px);
+                margin-left: 15px;
+            }
+            .overlay{
+                opacity: 1;    
+            }
+        }
+    }
+}
+// numbers
+.numbers{
+    @include backgroundColor($cyan);
+    color:$white;
+    .col-mmd{
+        @media (min-width:575px){
+            flex: 0 0 20%;
+            padding: 1.875rem 0;
+        }
+        @media (max-width:575px){
+            .border-right{
+                border-left: 0;
+            }
+            .border-left{
+                border-left: 0;
+            }
+        }
+        h2{
+            @include mont-bold (3.8rem);
+        }
+    }
+}
+// services
+.service{
+    @extend %marginSec;
+    i{
+        font-size: 1.875rem;
+        color:$cyan;
+    }
+    h5{
+        @include mont-reg (1.2rem);
+        text-transform: uppercase;
+    }
+}
+// unique design
+.design{
+    @extend %marginSec;
+    @include backgroundImage('../img/3.png'); 
+    .mobile{
+        left: 50rem;
+        top: 27.4375rem;
+        @media (max-width:1360px){
+            display: none;
+        }
+    }
+}
+// Accordion
+.acc{
+    @extend %marginSec;
+    .card-header{
+        background-color: $white;
+    }
+    .btn-link{
+        color:$cyan;
+        i{
+            font-size: 1.5rem;
+        }
+    }
+    .card-body{
+        overflow: auto;
+        height: 150px;
+    }
+}
+// grey quote
+.quote{
+    @include backgroundColor($lightgrey);
+    padding:4.375rem 0;
+    .media{
+        padding:0 5rem;
+      @extend %media;
+      @media (max-width:600px){ 
+            display: inline-block;
+        i{
+            margin-bottom: 30px;
+        }    
+    }
+}
+    .carousel-control-prev-icon{
+        @include backgroundImage('../img/ARROW.png', no-repeat , contain); 
+    }
+    .carousel-control-next-icon{
+        @include backgroundImage('../img/ARROW_right.png' , no-repeat , contain); 
+    }
+    .carousel-control-next{
+        width: 7%;
+    }
+    .fa-comments{
+        color:$cyan;
+        font-size:4.5rem;
+        padding:1.7rem;
+        border: 0.125rem solid $cyan;
+    }
+}
+// team 
+.team{
+    @extend %marginSec;
+    figcaption{
+        @media (max-width:775px){
+            margin-bottom: 3.75rem;
+        }
+    }
+    figure{
+    .overlay{
+        @include overlay( 50% , 30%);
+        i{
+            @include backgroundColor($endgrediant);
+            padding:0.625rem;
+            margin: 0;
+            color:$startgrediant;
+            &:hover{
+                @include backgroundColor($startgrediant);
+                color:$white;
+            }
+        }
+    }
+    &:hover{
+        transform: translate(-0.625rem , -0.625rem);
+        &::after{
+            @extend %grediant-overlay;
+            box-shadow: 0.3125rem 0.3125rem 0 0 $cyan;
+            width:100%;
+            margin-right: 15px;
+        }
+        .overlay{
+            opacity: 1;      
+        }
+    }
+    }
+}
+// brands
+.brands{
+    @include backgroundColor($lightgrey);
+    padding:4.375rem 0; 
+    img{
+        @media (max-width:575px){
+            margin-bottom: 3.75rem;
+        }
+    }
+}
+// work
+.img-over{
+    position: relative;
+    img{
+        width:100%;
+    }
+    .overlay{
+        @include overlay( 40% , 25%);
+        i{
+            font-size:1.5rem;
+        }
+    }
+    &:hover{
+        &::after{
+            @extend %grediant-overlay;
+            width: 100%;
+        }
+        .overlay{
+            opacity: 1;    
+        }
+    }
+}
+// white quote
+.whitequote{
+    @include backgroundColor($white);
+    @extend %media;
+    .carousel-control-prev{
+        width: 8%;
+    }
+}
+// clients
+.clients{
+    @extend %marginSec;
+    @include backgroundImage('../img/21.png'); 
+    padding: 0;
+    padding-bottom: 5rem;
+    span:after{
+        @extend %line;
+        margin:0;
+        margin-bottom: 0.937rem;
+    }
+    p{
+        @include roboto-reg (1rem);
+    }
+}
+// stories
+.stories{
+    @extend %marginSec;
+    .card{
+        position: relative;
+        border: none;
+        @media (max-width:575px){
+            padding: 0;
+        }
+        .card-body {
+            @include roboto-reg (.8rem);
+            padding: 20px 0 0 0;
+            h6{
+                @include mont-bold (1.1rem);
+            }
+            i{
+                color:$cyan;
+                font-size: 1rem;
+            }
+            @media (max-width:775px){
+                margin-bottom: 3.75rem;
+        }
+        }
+        .date{
+            position: absolute;
+            padding: 0.625rem 0.9375rem;
+            right: 20rem;
+            bottom: 10.3rem;
+            color:$white;
+            @include backgroundColor($cyan);
+            h4{
+                @include mont-bold (1.2rem);
+            }
+            @media (max-width:1360px){
+                display: none;
+            }
+        }
+    }
+}
+// footer
+.footer{
+    padding: 4.6875rem 0;
+    @include backgroundColor($lightgrey);
+    .mogo{
+        @media (max-width:575px){
+            margin-bottom: 3.75rem;
+        }
+        h6{
+            @include mont-bold ();
+        }
+        h2{
+        @include mont-bold ();
+        }
+        p{
+            @include mont-reg();
+        }
+        h6{
+            span{
+                @include mont-bold (1.3rem);
+            }
+        }
+        i{
+            color:$cyan;
+            font-size: .8rem;
+            margin-right: .5rem;
+        }
+    }
+    .btn{
+        @include backgroundColor($cyan);
+        color:$white;
+        padding:0.5rem 2.5rem;
+        @media (max-width:575px){
+            margin-bottom: 3.75rem;
+        }
+    }
+    .insta{
+        h6{
+            @include mont-bold ();
+        }
+        img{
+            width:100%;
+            padding: 0.125rem;
+        }
+        span{
+            @include roboto-light-italic();
+        }
+     
+    }
+}

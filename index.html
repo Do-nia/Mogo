@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md scrolling fixed-top">
+        <section class="container">
+            <a href="index.html" class="navbar-brand text-light logo order-1 mr-auto">
+                MoGo
+            </a>
+            <button class="navbar-toggler text-light order-3" data-toggle="collapse" data-target="#navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse order-4 order-md-2" id="navigation">
+                <ul class="navbar-nav ml-auto text-uppercase">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link active"> about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#service" class="nav-link">service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#work" class="nav-link">work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link"> blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"> contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="order-2 order-md-3">
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-search"></i>
+            </div>
+        </section>
+    </nav>
+    <!-- Hero Section -->
+    <header>
+        <!-- <div class="overlay"></div> -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <!-- FirstCarsouel -->
+                <div class="carousel-item first active">
+                        <div class="header-content text-white text-center">
+                            <h3>
+                                Creative Template
+                            </h3>
+                            <div class="row w-100">
+                                <h1 class="text-uppercase col-sm-12 col-md-6 col-lg-4">Welcome to MoGo</h1>
+                            </div>
+                            <!-- modal -->
+                            <button type="button" class="text-uppercase btn btn-outline-light btn-outline"
+                                data-toggle="modal" data-target=".bd-example-modal-sm">Learn more</button>
+                            <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog"
+                                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content text-muted text-left">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatum dolore
+                                        dolores enim tenetur? Veniam libero officiis eius quas doloremque voluptatibus,
+                                        voluptates totam esse expedita ab? Quo blanditiis voluptatibus reiciendis.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nam recusandae
+                                        quae
+                                        minima dolorum, quasi, mollitia cum maiores perspiciatis culpa quaerat voluptate
+                                        quibusdam odit accusamus hic fuga ut suscipit voluptates! Lorem ipsum dolor sit
+                                        amet
+                                        consectetur
+                                        adipisicing elit. Sunt ut voluptatum natus quo exercitationem iste cum, maiores
+                                        veniam harum
+                                        error obcaecati dolore laborum, eligendi rem quos ducimus numquam, quis aliquid?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- Second Carsouel -->
+                <div class="carousel-item second">
+                        <div class="header-content text-white text-center">
+                            <h3>
+                                Creative Template
+                            </h3>
+                            <div class="row w-100">
+                                <h1 class="text-uppercase col-sm-12 col-md-6 col-lg-4">Amazing Service</h1>
+                            </div>
+                            <!-- modal -->
+                            <button type="button" class="text-uppercase btn btn-outline-light btn-outline"
+                                data-toggle="modal" data-target=".bd2-example-modal-sm">Learn more</button>
+                            <div class="modal fade bd2-example-modal-sm" tabindex="-1" role="dialog"
+                                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content text-muted text-left">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatum dolore
+                                        dolores enim tenetur? Veniam libero officiis eius quas doloremque voluptatibus,
+                                        voluptates totam esse expedita ab? Quo blanditiis voluptatibus reiciendis.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nam recusandae
+                                        quae
+                                        minima dolorum, quasi, mollitia cum maiores perspiciatis culpa quaerat voluptate
+                                        quibusdam odit accusamus hic fuga ut suscipit voluptates! Lorem ipsum dolor sit
+                                        amet
+                                        consectetur
+                                        adipisicing elit. Sunt ut voluptatum natus quo exercitationem iste cum, maiores
+                                        veniam harum
+                                        error obcaecati dolore laborum, eligendi rem quos ducimus numquam, quis aliquid?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- Third Carsouel -->
+                <div class="carousel-item third">
+                        <div class="header-content text-white text-center">
+                            <h3>
+                                Creative Template
+                            </h3>
+                            <div class="row w-100">
+                                <h1 class="text-uppercase col-sm-12 col-md-6 col-lg-4">latest blog</h1>
+                            </div>
+                            <!-- modal -->
+                            <button type="button" class="text-uppercase btn btn-outline-light btn-outline"
+                                data-toggle="modal" data-target=".bd3-example-modal-sm">Learn more</button>
+                            <div class="modal fade bd3-example-modal-sm" tabindex="-1" role="dialog"
+                                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content text-muted text-left">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatum dolore
+                                        dolores enim tenetur? Veniam libero officiis eius quas doloremque voluptatibus,
+                                        voluptates totam esse expedita ab? Quo blanditiis voluptatibus reiciendis.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nam recusandae
+                                        quae
+                                        minima dolorum, quasi, mollitia cum maiores perspiciatis culpa quaerat voluptate
+                                        quibusdam odit accusamus hic fuga ut suscipit voluptates! Lorem ipsum dolor sit
+                                        amet
+                                        consectetur
+                                        adipisicing elit. Sunt ut voluptatum natus quo exercitationem iste cum, maiores
+                                        veniam harum
+                                        error obcaecati dolore laborum, eligendi rem quos ducimus numquam, quis aliquid?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a> -->
+        </div>
+        <!-- Header Content -->
+
+    </header>
+    <!-- about us section -->
+    <section class="about-us container" id="about">
+        <div class="row justify-content-center">
+            <div class="title col-md-8 col-sm text-center">
+                <h4>what we do</h4>
+                <h3 class="text-uppercase">story about us</h3>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. In quis nobis, modi quas
+                    qui necessitatibus magni
+                    odio iure, dolor ab sequi voluptatem assumenda dolore, labore ducimus reiciendis illo? Vel,
+                    voluptatibus?</p>
+            </div>
+        </div>
+        <section class="row">
+            <figure class="col-md-4 col-sm-12">
+                <img src="img/aboutus1.jpg" alt="aboutus1" class="img-fluid">
+                <div class="overlay">
+                    <i class="fas fa-user-friends"></i>
+                    <h6 class="text-uppercase">super team</h6>
+                </div>
+            </figure>
+            <figure class="col-md-4 col-sm-12">
+                <img src="img/aboutus2.jpg" alt="aboutus1" class="img-fluid">
+                <div class="overlay">
+                    <i class="fas fa-user-friends"></i>
+                    <h6 class="text-uppercase">super team</h6>
+                </div>
+            </figure>
+            <figure class="col-md-4 col-sm-12">
+                <img src="img/aboutus3.jpg" alt="aboutus1" class="img-fluid">
+                <div class="overlay">
+                    <i class="fas fa-user-friends"></i>
+                    <h6 class="text-uppercase">super team</h6>
+                </div>
+            </figure>
+
+        </section>
+    </section>
+    <section class="numbers">
+        <section class="container">
+            <div class="row text-center">
+                <div class="col-sm-12 col-mmd border-left border-right">
+                    <h2>42</h2>
+                    <p class="text-uppercase">web design projects</p>
+                </div>
+                <div class="col-sm-12 col-mmd border-right">
+                    <h2>123</h2>
+                    <p class="text-uppercase">happy client</p>
+                </div>
+                <div class="col-sm-12 col-mmd border-right">
+                    <h2>15</h2>
+                    <p class="text-uppercase">award winner</p>
+                </div>
+                <div class="col-sm-12 col-mmd border-right">
+                    <h2>99</h2>
+                    <p class="text-uppercase">cup of coffe</p>
+                </div>
+                <div class="col-sm-12 col-mmd border-right">
+                    <h2>24</h2>
+                    <p class="text-uppercase">members</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- service section -->
+    <section class="service" id="service">
+        <section class="container">
+            <div class="title text-center">
+                <h4>We work with</h4>
+                <h3 class="text-uppercase">Amazing Services</h3>
+            </div>
+            <div class="row border-bottom pb-4">
+                <div class="media col-md-4 col-sm">
+                    <i class="far fa-clock align-self-start mr-3"></i>
+                    <div class="media-body">
+                        <h5 class="mt-0">Photography</h5>
+                        <p class="text-muted">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+                <div class="media col-md-4 col-sm">
+                    <i class="far fa-image align-self-start mr-3"></i>
+                    <div class="media-body">
+                        <h5 class="mt-0">Web Design</h5>
+                        <p class="text-muted">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+                <div class="media col-md-4 col-sm">
+                    <i class="fas fa-desktop align-self-start mr-3"></i>
+                    <div class="media-body">
+                        <h5 class="mt-0">Creativity</h5>
+                        <p class="text-muted">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="media col-md-4 col-sm">
+                    <i class="fas fa-book align-self-start mr-3"></i>
+                    <div class="media-body">
+                        <h5 class="mt-0">SEO</h5>
+                        <p class="text-muted">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+                <div class="media col-md-4 col-sm">
+                    <i class="fas fa-home align-self-start mr-3"></i>
+                    <div class="media-body">
+                        <h5 class="mt-0">css/html</h5>
+                        <p class="text-muted">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+                <div class="media col-md-4 col-sm">
+                    <i class="fa fa-object-group align-self-start mr-3"></i>
+                    <div class="media-body">
+                        <h5 class="mt-0">digital</h5>
+                        <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- design section -->
+    <section class="design position-relative text-center">
+        <div class="title text-center pb-0">
+            <h4>for all devices</h4>
+            <h3 class="text-uppercase pb-0">unique design</h3>
+        </div>
+        <img src="img/1.png" alt="mob1" class="img-fluid">
+        <img src="img/2.png" alt="mob2" class="mobile img-fluid position-absolute">
+    </section>
+    <!-- Accordion section -->
+    <section class="acc">
+        <section class="container">
+            <div class="row justify-content-center">
+                <div class="title col-md-8 col-sm text-center">
+                    <h4>service</h4>
+                    <h3 class="text-uppercase">what we do</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. In quis nobis, modi
+                        quas
+                        qui necessitatibus magni
+                        odio iure, dolor ab sequi voluptatem assumenda dolore, labore ducimus reiciendis illo? Vel,
+                        voluptatibus?</p>
+                </div>
+            </div>
+            <div class="row">
+                <img src="img/Layer43.png" class="col-md-6 col-sm w-100 h-100">
+                <div class="accordion col-md-6 col-sm" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link text-uppercase" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="far fa-image mr-1"></i>
+                                    photography
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed text-uppercase" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    <i class="far fa-lightbulb mr-1"></i>
+                                    creativity
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed text-uppercase" type="button"
+                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    <i class="far fa-dot-circle mr-1 "></i>
+                                    web design
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- quote section -->
+    <section class="quote">
+        <section class="container">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="media">
+                            <i class="fas fa-comments align-self-center ml-5"></i>
+                            <blockquote class="blockquote media-body ml-5">
+                                <p class="mb-2 font-italic text-muted">“Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                                <footer class="blockquote-footer">
+                                    <span>jon Doe</span>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="media">
+                            <i class="fas fa-comments align-self-center ml-5"></i>
+                            <blockquote class="blockquote media-body ml-5">
+                                <p class="mb-2 font-italic text-muted">“Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                                <footer class="blockquote-footer">
+                                    <span>jon Doe</span>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+    </section>
+    <!-- team section -->
+    <section class="team text-center">
+        <section class="container">
+            <div class="row justify-content-center">
+                <div class="title text-center col-md-9 col-sm">
+                    <h4>who we are</h4>
+                    <h3 class="text-uppercase">meet our team</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. In quis nobis, modi
+                        quas qui necessitatibus
+                        magni odio iure, dolor ab sequi voluptatem assumenda dolore, labore ducimus reiciendis illo?
+                        Vel,
+                        voluptatibus?
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <figure>
+                        <img src="img/11.png" class="w-100">
+                        <div class="overlay">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-pinterest-p"></i>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </figure>
+                    <figcaption>
+                        <h4>Matthew Dix</h4>
+                        <span class="text-muted">Graphic Design</span>
+                    </figcaption>
+                </div>
+                <div class="col-md-4">
+                    <figure>
+                        <img src="img/12.png" class="w-100">
+                        <div class="overlay">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-pinterest-p"></i>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </figure>
+                    <figcaption>
+                        <h4>Christopher Campbell</h4>
+                        <span class="text-muted">Branding/UX design</span>
+                    </figcaption>
+                </div>
+                <div class="col-md-4">
+                    <figure>
+                        <img src="img/13.png" class="w-100">
+                        <div class="overlay">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-pinterest-p"></i>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </figure>
+                    <figcaption>
+                        <h4>Michael Fertig</h4>
+                        <span class="text-muted">Developer</span>
+                    </figcaption>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- brands section -->
+    <section class="brands">
+        <section class="container">
+            <figure class="row text-center">
+                <div class="col-md-2 col-sm align-self-center">
+                    <img src="img/4.png" alt="brand1" class="w-75 img-fluid ">
+                </div>
+                <div class="col-md-2 col-sm align-self-center">
+                    <img src="img/5.png" alt="brand1" class="w-75 img-fluid ">
+                </div>
+                <div class="col-md-2 col-sm align-self-center">
+                    <img src="img/6.png" alt="brand1" class="w-75 img-fluid ">
+                </div>
+                <div class="col-md-2 col-sm align-self-center">
+                    <img src="img/7.png" alt="brand1" class="w-75 img-fluid ">
+                </div>
+                <div class="col-md-2 col-sm align-self-center">
+                    <img src="img/8.png" alt="brand1" class="w-75 img-fluid ">
+                </div>
+                <div class="col-md-2 col-sm align-self-center">
+                    <img src="img/9.png" alt="brand1" class="w-75 img-fluid ">
+                </div>
+            </figure>
+        </section>
+    </section>
+    <!-- work section -->
+    <section class="work text-center" id="work">
+        <div class="row justify-content-center w-100 no-gutters">
+            <div class="title text-center col-md-9 col-sm">
+                <h4>who we are</h4>
+                <h3 class="text-uppercase">some of our work</h3>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea
+                    commodo consequat.
+                </p>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-md-3 col-sm-12">
+                    <div class="row no-gutters">
+                        <div class="col-md-12 col-sm-12 img-over">
+                            <img src="img/14.png" class="w-100">
+                            <div class="overlay">
+                                <i class="far fa-image mr-1"></i>
+                                <h6 class="text-uppercase">creativity designed</h6>
+                                <p>lorem ipsum dolar sit</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 img-over">
+                            <img src="img/15.png" class="w-100">
+                            <div class="overlay">
+                                <i class="far fa-image mr-1"></i>
+                                <h6 class="text-uppercase">creativity designed</h6>
+                                <p>lorem ipsum dolar sit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="row no-gutters">
+                        <div class="col-md-12 col-sm-12 img-over">
+                            <img src="img/16.png" class="w-100">
+                            <div class="overlay">
+                                <i class="far fa-image mr-1"></i>
+                                <h6 class="text-uppercase">creativity designed</h6>
+                                <p>lorem ipsum dolar sit</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 img-over">
+                            <img src="img/17.png" class="w-100">
+                            <div class="overlay">
+                                <i class="far fa-image mr-1"></i>
+                                <h6 class="text-uppercase">creativity designed</h6>
+                                <p>lorem ipsum dolar sit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="row no-gutters">
+                        <div class="col-md-12 col-sm-12 img-over">
+                            <img src="img/18.png" class="w-100">
+                            <div class="overlay">
+                                <i class="far fa-image mr-1"></i>
+                                <h6 class="text-uppercase">creativity designed</h6>
+                                <p>lorem ipsum dolar sit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="row no-gutters">
+                        <div class="col-md-12 col-sm-12 img-over">
+                            <img src="img/19.png" class="w-100">
+                            <div class="overlay">
+                                <i class="far fa-image mr-1"></i>
+                                <h6 class="text-uppercase">creativity designed</h6>
+                                <p>lorem ipsum dolar sit</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 img-over">
+                            <img src="img/20.png" class="w-100">
+                            <div class="overlay">
+                                <i class="far fa-image mr-1"></i>
+                                <h6 class="text-uppercase">creativity designed</h6>
+                                <p>lorem ipsum dolar sit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- white quote section -->
+    <section class="quote whitequote">
+        <section class="container">
+            <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <figure class="col-md-2 col-sm img-fluid">
+                                <img src="img/10.png" alt="" class=" w-100">
+                            </figure>
+                            <blockquote class="blockquote col-md-8 col-sm ">
+                                <p class="mb-0 font-italic text-muted">“Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit,
+                                    sed
+                                    do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                                <footer class="blockquote-footer">
+                                    <span>jon Doe</span>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <figure class="col-md-2 col-sm img-fluid">
+                                <img src="img/10.png" alt="" class=" w-100">
+                            </figure>
+                            <blockquote class="blockquote col-md-8 col-sm ">
+                                <p class="mb-0 font-italic text-muted">“Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit,
+                                    sed
+                                    do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                                <footer class="blockquote-footer">
+                                    <span>jon Doe</span>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- client section -->
+    <section class="clients text-center">
+        <section class="container">
+            <div class="row justify-content-center">
+                <div class="title text-center col-md-9 col-sm">
+                    <h4>Happy Clients</h4>
+                    <h3 class="text-uppercase">What people say</h3>
+                </div>
+                <div class="row no-gutters">
+                    <div class="media col-md-6 col-sm">
+                        <img src="img/22.png" class="mr-3">
+                        <div class="media-body text-left pl-4 pb-4">
+                            <h5 class="mt-0 text-uppercase">Matthew Dix</h5>
+                            <span>Graphic Design</span>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                        </div>
+                    </div>
+                    <div class="media col-md-6 col-sm">
+                        <img src="img/23.png" class="mr-3">
+                        <div class="media-body  text-left pl-4 pb-5">
+                            <h5 class="mt-0 text-uppercase">Nick Karvounis</h5>
+                            <span>Graphic Design</span>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                        </div>
+                    </div>
+                    <div class="media col-md-6 col-sm">
+                        <img src="img/24.png" class="mr-3">
+                        <div class="media-body  text-left pl-4 pb-5">
+                            <h5 class="mt-0 text-uppercase">Jaelynn Castillo </h5>
+                            <span>Graphic Design</span>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                        </div>
+                    </div>
+                    <div class="media col-md-6 col-sm">
+                        <img src="img/25.png" class="mr-3">
+                        <div class="media-body text-left pl-4">
+                            <h5 class="mt-0 text-uppercase">Mike Petrucci</h5>
+                            <span>Graphic Design</span>
+                            <p class="text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- stories section -->
+    <section class="stories text-center" id="blog">
+        <section class="container">
+            <div class="row no-gutters justify-content-center">
+                <div class="title text-center col-md-9 col-sm pt-0">
+                    <h4>our stories</h4>
+                    <h3 class="text-uppercase">latest blog</h3>
+                </div>
+                <div class="row mx-0">
+                    <div class="card col-md-4">
+                        <div class="card-img-top ">
+                            <img src="img/26.png" class="img-fluid">
+                        </div>
+                        <div class="card-body text-left">
+                            <h6 class="text-uppercase">Lorem ipsum dolor sit amet</h6>
+                            <p class="card-text text-muted border-bottom pb-4 ">Consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <i class="fas fa-eye"></i>
+                            <span class="pr-2 pl-2 text-muted">542</span>
+                            <i class="fas fa-comment-dots"></i>
+                            <span class="pl-2 text-muted">17</span>
+                        </div>
+                        <div class="date">
+                            <h4 class="m-0">15</h4>
+                            <p class="mb-0">Jan</p>
+                        </div>
+                    </div>
+
+                    <div class="card col-md-4">
+                        <div class="card-img-top ">
+                            <img src="img/27.png" class="img-fluid">
+                        </div>
+                        <div class="date">
+                            <h4 class="m-0">14</h4>
+                            <p class="mb-0">Jan</p>
+                        </div>
+                        <div class="card-body text-left">
+                            <h6 class="text-uppercase">sed do eiusmod tempor</h6>
+                            <p class="card-text text-muted border-bottom pb-4 ">Adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                            <i class="fas fa-eye"></i>
+                            <span class="pr-2 pl-2 text-muted">992</span>
+                            <i class="fas fa-comment-dots"></i>
+                            <span class="pl-2 text-muted">42</span>
+                        </div>
+                    </div>
+                    <div class="card col-md-4">
+                        <div class="card-img-top ">
+                            <img src="img/28.png" class="img-fluid">
+                        </div>
+                        <div class="date">
+                            <h4 class="m-0">12</h4>
+                            <p class="mb-0">Jan</p>
+                        </div>
+                        <div class="card-body text-left card-body-new">
+                            <h6 class="text-uppercase">incididunt ut labore et dolore</h6>
+                            <p class="card-text text-muted border-bottom pb-4">Elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua.</p>
+                            <i class="fas fa-eye"></i>
+                            <span class="pr-2 pl-2 text-muted">1560</span>
+                            <i class="fas fa-comment-dots"></i>
+                            <span class="pl-2 text-muted">98</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- footer -->
+    <footer class="footer" id="contact">
+        <section class="container">
+            <h6 class="row">
+                <div class="mogo col-md-5 col-sm">
+                    <h2 class="text-muted">MoGo</h2>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. </p>
+                    <h6 class="border-bottom pb-3"><span>15k </span>followers</h6>
+                    <span class="text-muted mr-2">Follow Us</span>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-dribbble"></i>
+                </div>
+                <form class="col-md-4 col-sm">
+                    <div class="form-group">
+                        <h6 class="text-uppercase pb-1">contact</h6>
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <div class="insta col-md-3 col-sm">
+                    <h6 class="text-uppercase pb-1">instagram</h6>
+                    <div class="row no-gutters">
+                        <div class="col-4">
+                            <img src="img/footer1.png" class="align-self-center">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/footer2.png">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/footer3.png">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/footer4.png">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/footer5.png">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/footer6.png">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/footer7.png">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/footer8.png">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/footer9.png">
+                        </div>
+                        <span class="text-muted pt-1">view more photos</span>
+                    </div>
+                </div>
+        </section>
+    </footer>
+
+    <!-- js files -->
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+</body>
+
+</html>
